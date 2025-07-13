@@ -37,13 +37,16 @@ main img {
 
 /* Aside section */
 aside {
-  max-width: 300px;
-  margin: 20px auto;
+  max-width: 720px; /* 90% of 800px */
+  margin: 30px auto;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
   background-color: #f9f9f9;
   color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
+
 
 aside img {
   width: 100%;
