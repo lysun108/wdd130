@@ -4,13 +4,15 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  color: #222;
 }
 
 /* Header and navigation */
 header {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
 }
 
@@ -18,13 +20,18 @@ nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Main content */
 main {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 10px;
+}
+
+main h1 {
+  margin-bottom: 20px;
 }
 
 main img {
@@ -32,13 +39,13 @@ main img {
   height: auto;
   border-radius: 8px;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 15px auto;
 }
 
 /* Aside section */
 aside {
-  max-width: 720px; /* 90% of 800px */
-  margin: 30px auto;
+  max-width: 720px;
+  margin: 40px auto;
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #f9f9f9;
@@ -47,25 +54,34 @@ aside {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
+aside h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.4em;
+}
 
 aside img {
   width: 100%;
-  max-width: 260px;
+  max-width: 360px;
   height: auto;
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   border-radius: 6px;
 }
 
 /* Paragraph reset */
 p {
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 /* Footer styles */
 footer {
-  margin-top: 30px;
+  margin-top: 40px;
   border-top: 1px solid #999;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
 }
