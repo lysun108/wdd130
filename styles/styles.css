@@ -28,7 +28,7 @@ main {
 }
 
 main img {
-  width: 150px;
+  width: 180px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -37,16 +37,17 @@ main img {
 
 /* Aside section */
 aside {
-  width: 300px;
+  max-width: 300px;
   margin: 20px auto;
   border: 1px solid #ccc;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   color: #333;
 }
 
 aside img {
-  width: 200px;
+  width: 100%;
+  max-width: 260px;
   height: auto;
   display: block;
   margin: 10px auto;
