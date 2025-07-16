@@ -16,11 +16,18 @@ header {
   text-align: center;
 }
 
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  background-color: #444;
+  padding: 8px 12px;
 }
 
 /* Main content */
@@ -32,6 +39,7 @@ main {
 
 main h1 {
   margin-bottom: 20px;
+  color: #222;
 }
 
 main img {
@@ -40,6 +48,8 @@ main img {
   border-radius: 8px;
   display: block;
   margin: 0 auto 15px auto;
+  padding: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Aside section */
