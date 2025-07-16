@@ -94,3 +94,27 @@ img {
   padding: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
+/* Avatar / profile image style */
+.profile-img {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px auto;
+  padding: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Optional: Center the main title */
+main h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Optional: Aside hover effect */
+aside:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
