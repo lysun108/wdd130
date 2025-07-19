@@ -46,9 +46,8 @@ h1 {
 }
 
 /* Avatar / profile image */
-.profile-img {
-  width: 240px;
-  max-width: 100%;
+main img.profile-img {
+  width: 150px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -59,14 +58,13 @@ h1 {
 
 /* Aside section */
 aside {
-  max-width: 720px;
-  margin: 40px auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #f9f9f9;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
   color: #333;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 aside h2 {
@@ -76,8 +74,7 @@ aside h2 {
 }
 
 aside img {
-  width: 100%;
-  max-width: 360px;
+  width: 200px;
   height: auto;
   display: block;
   margin: 15px auto;
@@ -93,8 +90,8 @@ p {
 
 /* Footer styles */
 footer {
-  margin-top: 40px;
-  border-top: 1px solid #999;
+  margin-top: 15px;
+  border-top: 1px solid #000;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
