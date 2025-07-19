@@ -106,3 +106,19 @@ img {
   padding: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
+/* Container to hold main and aside side-by-side */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap; /* 小屏时自动换行 */
+}
+
+main {
+  flex: 1;
+  max-width: 600px;
+}
