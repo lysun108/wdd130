@@ -1,112 +1,20 @@
-/* Reset and body style */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Reset and base */
+body, h1, h2, h3, p, ul, li, img, figure, blockquote, section, aside {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #222;
 }
 
-/* Header and navigation */
-header {
-  background-color: #333;
-  color: white;
-  padding: 12px;
-  text-align: center;
+body, header, nav, main, section, footer, aside, img, input, select, textarea, button {
+  box-sizing: border-box;
 }
 
-nav {
-  background-color: #333;
-  padding: 10px;
-}
-
-nav a {
-  color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #444;
-  padding: 8px 12px;
-  display: inline-block;
-}
-
-/* Main content */
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 10px;
-}
-
-/* h1 with grading-compatible format */
-h1 {
-  color: #222;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Avatar / profile image */
-main img.profile-img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 15px auto;
-  padding: 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Aside section */
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  text-align: center;
 }
 
-aside h2 {
-  text-align: center;
-  margin-top: 0;
-  font-size: 1.4em;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin: 15px auto;
-  border-radius: 6px;
-}
-
-/* Paragraph reset */
-p {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-/* Footer styles */
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-/* General img rule required by grading system */
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  padding: 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-/* Container to hold main and aside side-by-side */
+/* Layout: container for main + aside */
 .content-container {
   display: flex;
   justify-content: center;
@@ -115,10 +23,147 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  flex-wrap: wrap; /* 小屏时自动换行 */
+  flex-wrap: wrap;
 }
 
+/* Main layout */
 main {
   flex: 1;
   max-width: 600px;
+}
+
+/* Header and navigation */
+header {
+  background-color: #264969;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #264969;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Typography */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+/* Profile image */
+main img.profile-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside */
+aside {
+  width: 20rem;
+  padding: 1rem;
+  background-color: #e8e8e8;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+aside p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* General image rule */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific for aside image */
+aside img {
+  width: 200px;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Section: hometown */
+.hometown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hometown img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+/* Box reusable */
+.box {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Interests list */
+ul.box {
+  list-style: square inside;
+  padding-left: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #264969;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
 }
