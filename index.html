@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yang Liao | WDD 130</title>
-  <meta name="description" content="Personal home page of Yang Liao, a computer science student from Guangxi, China. Includes projects and cultural background.">
-  <meta name="author" content="Yang Liao">
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta name="description" content="Personal home page of Yang Liao, a computer science student from Guangxi, China. Includes projects and cultural background." />
+  <meta name="author" content="Yang Liao" />
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
   <header>
     <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">Rafting Website</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hometown">Guangxi</a></li>
+        <li><a href="wwr/">Rafting Website</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- 新增容器 -->
   <div class="content-container">
     <main>
       <h1>Yang Liao | WDD 130</h1>
-      <img src="images/profile.jpg" alt="Hello, my name is Yang Liao" class="profile-img">
-      <p>Hello! My name is Yang Liao and I'm from southern China. I'm currently studying computer science and working at a restaurant. I enjoy learning new technologies and building websites. I'm excited for this class!</p>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Yang Liao and I'm from southern China. I'm currently studying computer science and working at a restaurant. I enjoy learning new technologies and building websites. I'm excited for this class!</p>
+        <img src="images/profile.jpg" alt="Hello, my name is Yang Liao" class="profile-img" />
+      </section>
+
+      <section id="hometown">
+        <h2>My Hometown: Guangxi</h2>
+        <p>Guangxi is a beautiful region in southern China, known for the famous Guilin landscape, rich ethnic cultures, and the ancient Huashan cliff paintings. As a member of one of China's ethnic minorities, I grew up enjoying our traditional dish—oil tea. It's a healthy, flavorful part of our heritage that we proudly share with others.</p>
+        <img src="images/guilin.jpg" alt="Guilin scenery" />
+        <img src="images/oiltea.jpg" alt="Traditional oil tea" />
+      </section>
+
+      <section id="interests">
+        <h2>My Interests</h2>
+        <ul class="box">
+          <li>Software Development</li>
+          <li>Cooking</li>
+          <li>Church Activities</li>
+          <li>Exploring new technologies</li>
+        </ul>
+      </section>
     </main>
 
-    <aside>
-      <h2>Guangxi, China</h2>
-      <img src="images/guilin.jpg" alt="Guilin scenery">
-      <p>Guangxi is a beautiful region in southern China, known for the famous Guilin landscape, rich ethnic cultures, and the ancient Huashan cliff paintings. As a member of one of China's ethnic minorities, I grew up enjoying our traditional dish—oil tea. It's a healthy, flavorful part of our heritage that we proudly share with others.</p>
-      <img src="images/oiltea.jpg" alt="Traditional oil tea">
+    <aside class="box">
+      <h2>Latest Updates</h2>
+      <p>Currently enrolled in WDD 130 at BYU Pathway.</p>
+      <p>Exploring how to connect faith and technology in meaningful ways.</p>
     </aside>
   </div>
 
@@ -36,5 +59,4 @@
     <p>&copy; 2025 ❖ Yang Liao ❖ California, USA</p>
   </footer>
 </body>
-
 </html>
