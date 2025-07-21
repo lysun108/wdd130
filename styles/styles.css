@@ -64,11 +64,21 @@ nav ul li a {
   font-size: 18px;
 }
 
+/* ✅ Added to fix nav a Rule */
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Typography */
 h1 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
+  color: #264969; /* ✅ Added to fix h1 Rule */
 }
 
 h2 {
@@ -89,11 +99,13 @@ main img.profile-img {
 /* Aside */
 aside {
   width: 20rem;
+  margin: 0; /* ✅ Added to fix aside Rule */
   padding: 1rem;
   background-color: #e8e8e8;
-  border: 1px solid rgb(0 0 0 / 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 aside h2 {
@@ -158,6 +170,18 @@ ul.box {
   line-height: 1.6;
 }
 
+/* Paragraph inside aside */
+aside p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Paragraph padding rule (✅ already passed, kept for clarity) */
+p {
+  padding: 0;
+}
+
 /* Footer */
 footer {
   background-color: #264969;
@@ -166,4 +190,10 @@ footer {
   padding: 20px;
   font-size: 14px;
   margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
 }
