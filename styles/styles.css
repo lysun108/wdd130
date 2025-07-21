@@ -125,8 +125,11 @@ aside p {
 img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  display: block;
+  margin: 20px auto;
   padding: 5px;
+  border: 1px solid #ccc; /* ✅ 添加 border */
+  border-radius: 6px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -190,6 +193,7 @@ footer {
   padding: 20px;
   font-size: 14px;
   margin-top: 40px;
+  border-top: 1px solid #ccc; /* ✅ 添加 border-top */
 }
 
 footer p {
