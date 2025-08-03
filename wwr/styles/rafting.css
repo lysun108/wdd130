@@ -236,3 +236,27 @@ form button {
 form button:hover {
     background-color: var(--secondary-color);
 }
+/* Meet Our Team Section */
+.adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 250px; /* 每个卡片的最小宽度 */
+    max-width: 300px; /* 限制最大宽度 */
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.adventure-gallery figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
