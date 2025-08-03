@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact White Water Rafting - Get in touch for questions, reservations, or suggestions.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Yang Liao">
     <title>Contact Us - White Water Rafting</title>
+    <!-- Google Fonts Preconnect & Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -29,7 +34,7 @@
             <p><strong>Address:</strong> 123 River Road, Adventure City, ID 12345</p>
             <p><strong>Phone:</strong> (123) 456-7890</p>
             <p><strong>Email:</strong> info@wwrafting.com</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"></iframe>
         </section>
 
         <section>
@@ -53,11 +58,11 @@
         <section>
             <h2>Send Us a Message</h2>
             <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
                 <p>Purpose:</p>
                 <input type="radio" id="general" name="purpose" value="General Inquiry">
@@ -65,13 +70,13 @@
                 <input type="radio" id="reservation" name="purpose" value="Reservation Question">
                 <label for="reservation">Reservation Question</label><br>
                 <input type="radio" id="website" name="purpose" value="Website Suggestion">
-                <label for="website">Website Suggestion</label><br><br>
+                <label for="website">Website Suggestion</label>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
                 <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br><br>
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
