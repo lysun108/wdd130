@@ -6,37 +6,41 @@
     <meta name="description" content="Contact White Water Rafting - Get in touch for questions, reservations, or suggestions.">
     <meta name="author" content="Yang Liao">
     <title>Contact Us - White Water Rafting</title>
-    <!-- Google Fonts Preconnect & Font -->
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+    <!-- Header (统一和 About 页) -->
     <header>
-        <div class="logo">
-            <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo">
-        </div>
+        <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo">
         <h1>White Water Rafting</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a class="active" href="contact.html">Contact Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <!-- Contact Info + Map (左右布局) -->
+        <section class="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 River Road, Adventure City, ID 12345</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> info@wwrafting.com</p>
-            <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p><strong>Address:</strong> 123 River Road, Adventure City, ID 12345</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@wwrafting.com</p>
+                </div>
+                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
 
+        <!-- Team Section -->
         <section>
             <h2>Meet Our Team</h2>
             <div class="adventure-gallery">
@@ -55,6 +59,7 @@
             </div>
         </section>
 
+        <!-- Contact Form -->
         <section>
             <h2>Send Us a Message</h2>
             <form action="#" method="post">
@@ -83,14 +88,15 @@
         </section>
     </main>
 
+    <!-- Footer (统一和 About 页) -->
     <footer>
-        <p>©2025 White Water Rafting | All Rights Reserved</p>
+        <p>&copy; 2025 White Water Rafting | Created by Yang Liao</p>
         <p><a href="wireframe-contact.png">View Wireframe</a></p>
-        <div class="socialmedia">
+        <nav class="socialmedia">
             <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
             <a href="#"><img src="images/ins.png" alt="Instagram"></a>
-        </div>
+        </nav>
     </footer>
 </body>
 </html>
